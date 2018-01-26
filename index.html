@@ -8,6 +8,24 @@
     <link media="all" type="text/css" rel="stylesheet" href="/css/main.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
     <title>Document</title>
+
+    <style>
+        /* Style the tab content */
+
+        .tabcontent {
+            display: none;
+            animation: fadeEffect 1s;
+        }
+
+        @keyframes fadeEffect {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -131,33 +149,128 @@
                 <div class="column">
                     <div class="tabs is-medium">
                         <ul>
-                            <li class="is-active">
-                                <a>
+                            <li>
+                                <a class="tablinks" onclick="openTab(event,'About Me')">
                                     <span>About Me</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="tablinks" onclick="openTab(event,'Experience')" id="defaultOpen"> 
                                 <a>
                                     <span>Experience</span>
                                 </a>
                             </li>
                             <li>
-                                <a>
+                                <a class="tablinks" onclick="openTab(event,'Qualification')">
                                     <span>Qualification</span>
                                 </a>
                             </li>
                             <li>
-                                <a>
+                                <a class="tablinks" onclick="openTab(event,'My Work')">
                                     <span>My Work</span>
                                 </a>
                             </li>
                             <li>
-                                <a>
+                                <a class="tablinks" onclick="openTab(event,'Contact Me')">
                                     <span>Contact Me</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
+
+                    <div class="tabcontent" id="About Me"></div>
+                    <div class="tabcontent" id="Experience">
+                        <div class="box">
+                            <article class="media">
+                                <figure class="media-left">
+                                    <p class="image is-64x64">
+                                        <img src="./assets/SocGen.jpg">
+                                    </p>
+                                </figure>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong class="has-text-primary">Societe Generale</strong>
+                                            <span class="tag is-info">Dec 2016 - Current</span>
+                                            <br> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                            eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                                            montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                                            eu, pretium quis, sem. Nulla consequat massa quis enim.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="box">
+                            <article class="media">
+                                <figure class="media-left">
+                                    <p class="image is-64x64">
+                                        <img src="./assets/cognizant.jpg">
+                                    </p>
+                                </figure>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong class="has-text-primary">Cognizant Technology Solutions</strong>
+                                            <span class="tag is-info">Jan 2016 - Dec 2016</span>
+                                            <br> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                            eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                                            montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                                            eu, pretium quis, sem. Nulla consequat massa quis enim.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="box">
+                            <article class="media">
+                                <figure class="media-left">
+                                    <p class="image is-64x64">
+                                        <img src="./assets/xerox.png">
+                                    </p>
+                                </figure>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong class="has-text-primary">Xerox Corp</strong>
+                                            <span class="tag is-info">Oct 2015 - Jan 2016</span>
+                                            <br> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                            eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                                            montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                                            eu, pretium quis, sem. Nulla consequat massa quis enim.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="box">
+                            <article class="media">
+                                <figure class="media-left">
+                                    <p class="image is-64x64">
+                                        <img src="./assets/infosys.png">
+                                    </p>
+                                </figure>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong class="has-text-primary">Infosys Limited</strong>
+                                            <span class="tag is-info">Jul 2011 - Sep 2015</span>
+                                            <br> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                            eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                                            montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                                            eu, pretium quis, sem. Nulla consequat massa quis enim.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+                    <div class="tabcontent" id="Qualification"></div>
+                    <div class="tabcontent" id="My Work"></div>
+                    <div class="tabcontent" id="Contact Me"></div>
                 </div>
             </div>
         </div>
@@ -174,6 +287,30 @@
             </div>
         </div>
     </footer>
+
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            
+            tablinks = document.getElementsByClassName("tablinks");
+            
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace("is-active", "");
+            }
+            
+            document.getElementById(tabName).style.display = "block";
+            
+            evt.currentTarget.className += "is-active";
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
+
 </body>
 
 </html>
