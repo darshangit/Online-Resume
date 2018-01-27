@@ -52,17 +52,17 @@
                     Your Valuable FullStack Developer.
                 </h2>
                 <a href="https://www.linkedin.com/in/darshan-satya-b5b775ba" target="_blank" class="fadeEffectIcon">
-                    <span class="icon is-small has-text-dark">
-                        <i class="fab fa-linkedin is-small"></i>
+                    <span class="icon is-small has-text-dark is-small tooltip" data-tooltip="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
                     </span>
                 </a>
                 <a href="https://github.com/darshangit" target="_blank" class="fadeEffectIcon">
-                    <span class="icon is-small has-text-dark">
+                    <span class="icon is-small has-text-dark tooltip" data-tooltip="GitHub">
                         <i class="fab fa-github"></i>
                     </span>
                 </a>
                 <a href="mailto:darshans1989@gmail.com?Subject=Darshan, you sound great for our company" target="_top" class="fadeEffectIcon">
-                    <span class="icon is-small has-text-dark">
+                    <span class="icon is-small has-text-dark tooltip" data-tooltip="Gmail">
                         <i class="fab fa-google"></i>
                     </span>
                 </a>
@@ -70,7 +70,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="section">
         <div class="container">
@@ -170,7 +169,7 @@
                     <div class="tabs is-medium">
                         <ul>
                             <li>
-                                <a class="tablinks" onclick="openTab(event,'About Me')" id="defaultOpen">
+                                <a class="tablinks" onclick="openTab(event,'About Me')">
                                     <span>About Me</span>
                                 </a>
                             </li>
@@ -185,7 +184,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="tablinks" onclick="openTab(event,'My Work')">
+                                <a class="tablinks" onclick="openTab(event,'My Work')" id="defaultOpen">
                                     <span>My Work</span>
                                 </a>
                             </li>
@@ -193,33 +192,6 @@
                     </div>
 
                     <div class="tabcontent" id="About Me">
-                        <!-- <div class="content">
-                            <h3>My Principles</h3>
-                            <ul>
-                                <li>Dedication</li>
-                                <li>Hardwork</li>
-                                <li>Perseverance</li>
-                                <li>Positive Attitude</li>
-                            </ul>
-                            <h3>Attitude is Everything</h3>
-                            <p>Having close to 7 years of experience across across mamoth companies, every day I try to beat myself. Why? Cause thats what it takes to be the best.</p>
-                            <p>I work on anything that interests me. No bias. No Racism (Pun intended), Cause I believe you cannot be good at your job, if job is all what you do.</p>
-                            <p>What defines a person is what he does after 5PM and not what he does during 9-5.</p>
-                            <p>I believe there is nothing as such as impossible. With patience and deication everything is achievable.</p>
-                            <h3>My Passion</h3>
-                            <p>My heart yearns to make production grade websites which are a treat to the eyes and which has seamless UX.</p>
-                            <p>Node + Angular + Spring Boot + Mongo : These are the perfect recipe required to build any kind of a robust scalable software.</p>
-                            <p>On a day to day basis, I handle a team of 10 whome I try to motivate, guide, nuture to get the best out of them.</p>
-                            <p>All the architectural level coding and making groundbreaking changes are part of my routine job and guess what - I love it</p>
-                            <p>Every tag, every grid, every header, every navbar - These are the things which makes me get goosebumps and I try to keep building better websites.</p>
-                            <p>Making performance related changes to the backend is my favourite passtime.</p>
-                            <p>After all its nothing without the User Experience(UX)</p>
-                            <h3>What do I do other than coding</h3>
-                            <p>An avid reader. I at least read 2 books a month.</p>
-                            <p>A traveller. nah! not just travel to office but above and beyond it. </p>
-                            <p>A biker. I love to take my Dominar( Kratos ) to the roads less travelled.</p>
-                        </div> -->
-
                         <div class="tile is-ancestor">
                             <div class="tile is-vertical">
                                 <div class="tile">
@@ -236,7 +208,8 @@
                                         <article class="tile is-child notification is-warning">
                                             <p class="title">What you think, You become.</p>
                                             <div class="content">
-                                                <p>Every tag, every grid, every header, every navbar - These are the things which makes me get goosebumps and I try to keep building better websites.</p>
+                                                <p>Every tag, every grid, every header, every navbar - These are the things
+                                                    which makes me get goosebumps and I try to keep building better websites.</p>
                                                 <p>Making performance related changes to the backend is my favourite passtime.</p>
                                                 <p>After all its nothing without the User Experience(UX).</p>
                                             </div>
@@ -244,45 +217,51 @@
                                     </div>
                                     <div class="tile is-parent">
                                         <article class="tile is-child notification is-info">
-                                                <div class="content">
-                                            <p class="title">Attitude is Everything</p>
-                                            <p>Having close to 7 years of experience across across mamoth companies, every day
-                                                I try to beat myself. Why? Cause thats what it takes to be the best.</p>
-                                            <p>I work on anything that interests me. No bias. No Racism (Pun intended), Cause
-                                                I believe you cannot be good at your job, if job is all what you do.</p>
-                                            <p>What defines a person is what he does after 5PM and not what he does during 9-5.</p>
-                                            <p>I believe there is nothing as such as impossible. With patience and deication
-                                                everything is achievable.</p>
-                                                </div>
+                                            <div class="content">
+                                                <p class="title">Attitude is Everything</p>
+                                                <p>Having close to 7 years of experience across across mamoth companies, every
+                                                    day I try to beat myself. Why? Cause thats what it takes to be the best.</p>
+                                                <p>I work on anything that interests me. No bias. No Racism (Pun intended),
+                                                    Cause I believe you cannot be good at your job, if job is all what you
+                                                    do.</p>
+                                                <p>What defines a person is what he does after 5PM and not what he does during
+                                                    9-5.</p>
+                                                <p>I believe there is nothing as such as impossible. With patience and deication
+                                                    everything is achievable.</p>
+                                            </div>
                                         </article>
                                     </div>
                                     <div class="tile is-parent">
-                                            <article class="tile is-child notification is-success">
+                                        <article class="tile is-child notification is-success">
+                                            <div class="content">
+                                                <p class="title">My Passion</p>
                                                 <div class="content">
-                                                    <p class="title">My Passion</p>
-                                                    <div class="content">
-                                                            <p>My heart yearns to make production grade websites which are a treat to the eyes and which has seamless UX.</p>
-                                                            <p>Node + Angular + Spring Boot + Mongo : These are the perfect recipe required to build any kind of a robust scalable software.</p>
-                                                            <p>On a day to day basis, I handle a team of 10 whome I try to motivate, guide, nuture to get the best out of them.</p>
-                                                            <p>All the architectural level coding and making groundbreaking changes are part of my routine job and guess what - I love it</p>
-                                                            
-                                                    </div>
+                                                    <p>My heart yearns to make production grade websites which are a treat to
+                                                        the eyes and which has seamless UX.</p>
+                                                    <p>Node + Angular + Spring Boot + Mongo : These are the perfect recipe required
+                                                        to build any kind of a robust scalable software.</p>
+                                                    <p>On a day to day basis, I handle a team of 10 whome I try to motivate,
+                                                        guide, nuture to get the best out of them.</p>
+                                                    <p>All the architectural level coding and making groundbreaking changes
+                                                        are part of my routine job and guess what - I love it</p>
+
                                                 </div>
-                                            </article>
-                                        </div>
+                                            </div>
+                                        </article>
+                                    </div>
                                 </div>
                                 <div class="tile is-parent">
-                                    <article class="tile is-child notification is-danger">
+                                    <article class="tile is-child notification is-dark">
                                         <p class="title">What do I do other than coding</p>
                                         <div class="content">
-                                                <p>An avid reader. I at least read 2 books a month.</p>
-                                                <p>A traveller. nah! not just travel to office but above and beyond it. </p>
-                                                <p>A biker. I love to take my Dominar( Kratos ) to the roads less travelled.</p>
+                                            <p>An avid reader. I at least read 2 books a month.</p>
+                                            <p>A traveller. nah! not just travel to office but above and beyond it. </p>
+                                            <p>A biker. I love to take my Dominar( Kratos ) to the roads less travelled.</p>
                                         </div>
                                     </article>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                     <div class="tabcontent" id="Experience">
@@ -391,13 +370,13 @@
                                     </div>
                                     <footer class="card-footer">
                                         <a class="card-footer-item">
-                                            <span class="tag is-rounded is-dark">2007-2011</span>
+                                            <span class="tag is-rounded is-dark tooltip" data-tooltip="Duration">2007-2011</span>
                                         </a>
                                         <a class="card-footer-item">
-                                            <span class="tag is-rounded is-info">74%</span>
+                                            <span class="tag is-rounded is-info tooltip" data-tooltip="Percentage">74%</span>
                                         </a>
                                         <a class="card-footer-item">
-                                            <span class="tag is-primary">
+                                            <span class="tag is-primary tooltip" data-tooltip="College">
                                                 <strong>VTU</strong>
                                             </span>
                                         </a>
@@ -418,13 +397,13 @@
                                     </div>
                                     <footer class="card-footer">
                                         <a class="card-footer-item">
-                                            <span class="tag is-rounded is-dark">2005-2007</span>
+                                            <span class="tag is-rounded is-dark tooltip" data-tooltip="Duration">2005-2007</span>
                                         </a>
                                         <a class="card-footer-item">
-                                            <span class="tag is-rounded is-info">74%</span>
+                                            <span class="tag is-rounded is-info tooltip" data-tooltip="Percentage">74%</span>
                                         </a>
                                         <a class="card-footer-item">
-                                            <span class="tag is-primary">
+                                            <span class="tag is-primary tooltip" data-tooltip="College">
                                                 <strong>St.Aloysius</strong>
                                             </span>
                                         </a>
@@ -445,13 +424,13 @@
                                     </div>
                                     <footer class="card-footer">
                                         <a class="card-footer-item">
-                                            <span class="tag is-rounded is-dark">2005</span>
+                                            <span class="tag is-rounded is-dark tooltip" data-tooltip="Year of Passing">2005</span>
                                         </a>
                                         <a class="card-footer-item">
-                                            <span class="tag is-rounded is-info">84%</span>
+                                            <span class="tag is-rounded is-info tooltip" data-tooltip="Percentage">84%</span>
                                         </a>
                                         <a class="card-footer-item">
-                                            <span class="tag is-primary">
+                                            <span class="tag is-primary tooltip" data-tooltip="School">
                                                 <strong>K.V. No 1</strong>
                                             </span>
                                         </a>
@@ -465,7 +444,79 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tabcontent" id="My Work"></div>
+                    <div class="tabcontent" id="My Work">
+                        <div class="tile is-ancestor">
+                            <div class="tile is-vertical is-8">
+                                <div class="tile">
+                                    <div class="tile is-parent is-vertical">
+                                        <article class="tile is-child box notification is-success">
+                                            <p class="title">Angular On Wheels</p>
+                                            <div class="content">
+                                                <p>This is a full fledged website built from ground up on Angular 2</p>
+                                                <p>It is aimed at helping the dev community with the hot topics floating around in the tech industry</p>
+                                                <a href="#">Hosted on Firebase</a>
+                                            </div>
+                                        </article>
+                                        <article class="tile is-child box notification is-light">
+                                            <p class="title">React App</p>
+                                            <div class="content">
+                                                <p>Full fledged react application writting with Redux for the unidirectional flow.</p>
+                                                <a href="#">GitHub</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="tile is-parent">
+                                        <article class="tile is-child box notification is-warning">
+                                            <p class="title">Jboard</p>
+                                            <div class="content">
+                                                <p>Its a full fledged web application to manage leaves/sprint planning/pair programming and retro</p>
+                                                <p>Built on angular 5 couple with sprint boot, it has a seamless UI and is a breeze to use</p>
+                                                <a href="#">Hosted on Heroku</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="tile is-parent">
+                                    <article class="tile is-child box">
+                                        <p class="title">Github Contribution Snapshot</p>
+
+                                        <figure class="image">
+                                            <img src="./assets/contribution.PNG">
+                                          </figure>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="tile is-vertical is-parent">
+                                <article class="tile is-child box notification is-info">
+                                    <p class="title">Chat Bot</p>
+                                    <div class="content">
+                                        <p>Its a chat bot built on top of microsoft bot framework</p>
+                                        <p>It does basic tasks, like create a Ticket for problems.</p>
+                                        <p>Backend is on NodeJs.</p>
+                                        <p>I am working on NLP to give better automated response.</p>
+                                        <a href="#">GitHub</a>
+                                    </div>
+                                </article>
+                                <article class="tile is-child box notification is-dark">
+                                        <p class="title">Other Projects</p>
+                                        <div class="content">
+                                            <p>Have worked on various other projects</p>
+                                            <ul>
+                                                <li>Mobile App on Ionic</li>
+                                                <li>Event management project: Angular 2 </li>
+                                                <li>Games developed using Scratch 2 Framework</li>
+                                                <li>Created Project on Bulma Framework</li>
+                                                <li>MongoDB project</li>
+
+                                            </ul>
+
+                                            <a href="#">GitHub</a>
+                                        </div>
+                                    </article>
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
