@@ -168,23 +168,23 @@
                 <div class="column">
                     <div class="tabs is-medium">
                         <ul>
-                            <li>
-                                <a class="tablinks" onclick="openTab(event,'About Me')">
+                            <li class="tablinks is-active" onclick="openTab(event,'About Me')" id="defaultOpen">
+                                <a>
                                     <span>About Me</span>
                                 </a>
                             </li>
-                            <li class="tablinks" onclick="openTab(event,'Experience')" id="defaultOpen">
+                            <li class="tablinks" onclick="openTab(event,'Experience')">
                                 <a>
                                     <span>Experience</span>
                                 </a>
                             </li>
-                            <li>
-                                <a class="tablinks" onclick="openTab(event,'Qualification')">
+                            <li class="tablinks" onclick="openTab(event,'Qualification')">
+                                <a>
                                     <span>Qualification</span>
                                 </a>
                             </li>
-                            <li>
-                                <a class="tablinks" onclick="openTab(event,'My Work')">
+                            <li class="tablinks" onclick="openTab(event,'My Work')">
+                                <a>
                                     <span>My Work</span>
                                 </a>
                             </li>
@@ -617,12 +617,12 @@
             tablinks = document.getElementsByClassName("tablinks");
 
             for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace("is-active", "");
+                tablinks[i].className = tablinks[i].className.replace(" is-active", "");
             }
 
             document.getElementById(tabName).style.display = "block";
 
-            evt.currentTarget.className += "is-active";
+            evt.currentTarget.className += " is-active";
         }
         document.getElementById("defaultOpen").click();
     </script>
